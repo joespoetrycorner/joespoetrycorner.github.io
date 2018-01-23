@@ -1,8 +1,19 @@
 <html>
 <head>
 <title>Joe's Poetry Corner</title>
+   <script>
+      var i = 0;
+function makeChange() {
+var documente = document.getElementById("bg");
+var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+documente.style.backgroundColor = colors[i];
+i = (i + 1) % colors.length;
+}
+setInterval(makeChange(), 1000);
+
+   </script>
 </head>
-<body><marquee background="https://s-media-cache-ak0.pinimg.com/originals/eb/37/ef/eb37efb0a2a7d0de54a26ce419db1edd.gif" style="background-color:red;font-size:40px;font-family:'Comic Sans MS'" width="15%">Joe's poetry</marquee><br><img width="150px" height="226px" src="http://www.berkshireeagle.com/uploads/original/1511350179_ed69.jpg"/><br>
+<body><marquee id="bg" style="font-size:40px;font-family:'Comic Sans MS'" width="15%">Joe's poetry</marquee><br><img width="150px" height="226px" src="http://www.berkshireeagle.com/uploads/original/1511350179_ed69.jpg"/><br>
    <p style="font-family:'Comic Sans MS'">NEW POEM</p>
    <p style="font-family:'Comic Sans MS';font-size:14px;">"onomatopoeia"</p>
      <p style="font-family:'Comic Sans MS';font-size:12px;">roar, hiss, ding, argh, bark, achoo, buzz, ooze, moo, oink, pitter patter, snort, poof, doink, moan, meow</p>
