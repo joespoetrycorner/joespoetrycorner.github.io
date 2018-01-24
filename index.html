@@ -2,6 +2,12 @@
 <head>
 <title>Joe's Poetry Corner</title>
    <script>
+      function onBodyInitiation() {
+var mathematic = Math.floor(Math.random() * 10);      
+if(mathematic == 9){
+ document.getElementById('bg').background = "http://mdak.on.com/md/433/pu8wt9e7zp0bazz70bc5_M.jpg";
+}
+      }
 var i = 0;
 function change() {
   var doc = document.getElementById("background");
@@ -13,7 +19,7 @@ setInterval(change, 200);
 // creds to Amit on stackoverflow, couldn't get this myself
    </script>
 </head>
-<body><marquee id="background" style="font-size:40px;font-family:'Comic Sans MS'" width="15%">Joe's poetry corner</marquee><br><img width="150px" height="226px" src="http://mdak.on.com/md/433/pu8wt9e7zp0bazz70bc5_M.jpg"/><br>
+<body onload="onBodyInitiation()" id="bg"><marquee id="background" style="font-size:40px;font-family:'Comic Sans MS'" width="15%">Joe's poetry corner</marquee><br><img width="150px" height="226px" src="http://mdak.on.com/md/433/pu8wt9e7zp0bazz70bc5_M.jpg"/><br>
    <marquee style="font-size:16px;font-family:'Comic Sans MS'" width="30%" direction="up" scrollamount="3">Welcome to the corner</marquee><br>
    <p style="font-family:'Comic Sans MS'">hey guys wrote another poem for you</p>
    <p style="font-family:'Comic Sans MS';font-size:14px;">"dishwasher"</p>
